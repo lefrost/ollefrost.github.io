@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 html, body {
   margin: 0px;
   padding: 0px;
@@ -12,9 +16,13 @@ html, body {
   background-position: center;
   background-size: cover;
 }
+a {
+  font-family: 'Poppins';
+  color: #c7c8d1;
+}
 #container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -23,8 +31,6 @@ html, body {
   padding-bottom: 50px;
   background-color: rgba(25, 26, 33, 0.85);
 }
-
-
 #container #top {
   display: flex;
   flex-direction: row;
