@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #191a21;
+}
+a {
+  font-family: 'Poppins';
+  color: #c7c8d1;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#container #top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.4s;
+  padding-left: 40px;
+  margin-bottom: 25px;
+}
+#container #top #banner {
+  height: 600px;
+  margin-right: -40px;
+}
+#container #top #feature {
+  height: 600px;
+}
+#container #top:hover {
+  opacity: 1;
+}
+#container #list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#container #list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: opacity 0.4s;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 300px;
+}
+#container #list .item .title {
+  font-size: 25px;
+  color: #c7c8d1;
+  font-weight: 700;
+  text-decoration: none;
+  position: absolute;
+  margin-top: 0px;
+  transition: margin-top 0.4s;
+}
+#container #list .item .desc {
+  font-size: 16px;
+  color: rgba(199, 200, 209, 0.5);
+  font-weight: 500;
+  opacity: 0;
+  margin-top: 0px;
+  position: absolute;
+  transition: opacity 0.3s, margin-top 0.4s;
+}
+#container #list .item:hover {
+  opacity: 1;
+}
+#container #list .item:hover .title {
+  margin-top: -12px;
+}
+#container #list .item:hover .desc {
+  opacity: 1;
+  margin-top: 12px;
+}
