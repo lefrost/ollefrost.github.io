@@ -38,10 +38,10 @@ a {
 }
 #container #top #banner {
   height: 600px;
-  margin-right: -40px;
 }
 #container #top #feature {
   height: 600px;
+  margin-left: -35px;
 }
 #container #top:hover {
   opacity: 1;
