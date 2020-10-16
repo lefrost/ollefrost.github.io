@@ -1,51 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 html, body {
-  height: 100%;
-  width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
-}
-* {
-  transition: all 0.8s;
-}
-.background {
-  z-index: -1;
-  position: absolute;
-  opacity: 1;
-  width: 1920px;
-}
-#container {
   height: 100%;
   width: 100%;
-  background-color: rgba(39, 42, 69, 0.8);
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f2f0da;
+}
+#container #text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#container #back {
+#container #text #tbc {
+  font-size: 150px;
+  font-family: 'Quattrocento';
+  color: #3c3c4d;
   position: absolute;
+  transition: all 0.7s;
+}
+#container #text #back {
   font-size: 40px;
-  color: #f5e0c1;
-  opacity: 0.5;
-  z-index: 1;
-  font-family: 'Press Start 2P';
-  top: 50px;
-  left: 50px;
+  font-family: 'Quattrocento';
+  color: #3c3c4d;
+  position: absolute;
   text-decoration: none;
+  opacity: 0;
+  transition: all 0.7s;
 }
-#container #back:hover {
-  opacity: 1;
+#container #text:hover #tbc {
+  opacity: 0.1;
+  font-size: 250px;
 }
-#container #text {
-  font-family: 'Press Start 2P';
-  color: #f2bde5;
-  font-size: 30px;
-  opacity: 0.8;
+#container #text:hover #back {
+  font-size: 80px;
+  opacity: 0.5;
 }
-#container #text:hover {
-  letter-spacing: 5px;
+#container #text:hover #back:hover {
   opacity: 1;
 }
