@@ -1,70 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 html, body {
-  height: 100%;
-  width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
-}
-* {
-  transition: all 0.8s;
-}
-.background {
-  z-index: -1;
-  position: absolute;
-  opacity: 0;
-  width: 1920px;
-}
-#middle-background {
-  opacity: 1;
-}
-#container {
   height: 100%;
   width: 100%;
-  background-color: rgba(39, 42, 69, 0.8);
+}
+#container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f2f0da;
 }
-#container .link {
-  font-size: 15px;
-  color: #ebecf5;
-  font-family: 'Press Start 2P';
+#container #name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+#container #name #statue {
+  position: absolute;
+  height: 380px;
+  z-index: 1;
+  transition: all 0.7s;
+}
+#container #name #ryan {
+  font-size: 250px;
+  font-family: 'Quattrocento';
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container #name #koroh {
+  font-size: 182px;
+  font-family: 'Quattrocento';
+  color: #3c3c4d;
+  z-index: 0;
+  margin-top: -90px;
+  transition: all 0.7s;
+}
+#container #name #text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.7s;
+}
+#container #name #text #me {
+  font-size: 10px;
+  letter-spacing: 10px;
+  font-family: 'Sora';
+  color: #3c3c4d;
+  transition: all 0.7s;
+}
+#container #name #text #links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#container #name #text #links .link {
+  font-size: 40px;
+  font-family: 'Quattrocento';
+  color: #3c3c4d;
   text-decoration: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 0.7s;
 }
-#container .link:hover {
-  letter-spacing: 5px;
+#container #name #text #based {
+  font-size: 5px;
+  letter-spacing: 10px;
+  font-family: 'Sora';
+  color: #3c3c4d;
+  transition: all 0.7s;
 }
-#container #top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 30%;
+#container #name:hover #statue {
+  opacity: 0;
+  height: 150px;
+}
+#container #name:hover #ryan {
+  font-size: 350px;
+  opacity: 0.1;
+}
+#container #name:hover #koroh {
+  font-size: 255px;
+  margin-top: -128px;
+  opacity: 0.1;
+}
+#container #name:hover #text {
+  opacity: 1;
+}
+#container #name:hover #text #me {
+  font-size: 25px;
+}
+#container #name:hover #text #links .link {
   opacity: 0.5;
-}
-#container #middle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 40%;
-}
-#container #middle #name {
   font-size: 70px;
-  color: #ebecf5;
-  font-family: 'Press Start 2P';
 }
-#container #bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 30%;
-  opacity: 0.5;
+#container #name:hover #text #links .link:hover {
+  opacity: 1;
+}
+#container #name:hover #text #based {
+  font-size: 15px;
 }
