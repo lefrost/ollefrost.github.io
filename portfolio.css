@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+* {
+  transition: all 0.8s;
+}
+.background {
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+  width: 1920px;
+}
+#middle-background {
+  opacity: 1;
+}
+#container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(39, 42, 69, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#container #back {
+  position: absolute;
+  font-size: 40px;
+  color: #f5e0c1;
+  opacity: 0.5;
+  z-index: 1;
+  font-family: 'Press Start 2P';
+  top: 50px;
+  left: 50px;
+  text-decoration: none;
+}
+#container #back:hover {
+  opacity: 1;
+}
+#container .link {
+  font-size: 15px;
+  color: #ebecf5;
+  font-family: 'Press Start 2P';
+  text-decoration: none;
+}
+#container .link:hover {
+  letter-spacing: 5px;
+}
+#container #middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+#container #middle #top {
+  color: #ebecf5;
+  font-family: 'Press Start 2P';
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-left: -120px;
+  opacity: 0.7;
+}
+#container #middle #name {
+  font-size: 60px;
+  color: #ebecf5;
+  font-family: 'Press Start 2P';
+}
+#container #middle #extras {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-left: -3px;
+}
+#container #middle #extras .extra {
+  font-size: 12px;
+  color: #f5e0c1;
+  font-family: 'Press Start 2P';
+  text-decoration: none;
+  margin-right: 15px;
+  opacity: 0.7;
+}
+#container .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  opacity: 0.5;
+  padding: 20px;
+}
+#container #one, #container #three {
+  justify-content: flex-end;
+}
+#container #two, #container #four {
+  justify-content: flex-start;
+}
