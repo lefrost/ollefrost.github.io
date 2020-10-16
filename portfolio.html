@@ -1,0 +1,279 @@
+<body>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/ollefrost/ollefrost.github.io/master/marii.ico">
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Léfrost :: Portfolio</title>
+</head>
+
+<div id='container'>
+  <img class='background' id='one-background' src='https://i.postimg.cc/JrvZp5Nd/animanga-cards.png'>
+  
+  <img class='background' id='two-background' src='https://i.postimg.cc/nF9f8nmc/haus.png'>
+  
+  <img class='background' id='middle-background' src='https://media.sketchfab.com/models/4eba49b0f6f54ade836a565d98247723/thumbnails/1266d134f2564ede8e85a19fa5a4b681/34802d88b4be4c3a9bcf0eedf52b1140.jpeg'>
+  
+  <img class='background' id='three-background' src='https://media.sketchfab.com/models/4eba49b0f6f54ade836a565d98247723/thumbnails/1266d134f2564ede8e85a19fa5a4b681/34802d88b4be4c3a9bcf0eedf52b1140.jpeg'>
+  
+  <img class='background' id='four-background' src='https://i.postimg.cc/Kx66T6Cd/tripwire.png'>
+
+  <a href='#' id='back'>&lt;</a>
+  
+  <div class='item' id='one' onclick='location.href="#"'>
+    <a href='#' class='link'>ANIMANGA CARDS</a>
+  </div>
+  
+  <div class='item' id='two' onclick='location.href="#"'>
+    <a href='#' class='link'>HAUS</a>
+  </div>
+  
+  <div id='middle' onclick='location.href="#"'>
+    <a id='top'>RYAN KOROH'S</a>
+    <a id='name'>PORT<br>FOLIO</a>
+    <div id='extras'>
+      <a href='https://behance.net/ryankoroh' class='extra'>BEHANCE</a>
+      <a href='https://dribbble.com/ryankoroh' class='extra'>DRIBBBLE</a>
+      <a href='https://github.com/ollefrost' class='extra'>GITHUB</a>
+    </div>
+  </div>
+  
+  <div class='item' id='three' onclick='location.href="#"'>
+    <a href='#' class='link'>SINATRA</a>
+  </div>
+  
+  <div class='item' id='four' onclick='location.href="#"'>
+    <a href='#' class='link'>TRIPWIRE</a>
+  </div>
+
+</div>
+
+<script>
+
+$("#one").hover(function() {
+
+	$("#one-background").css({"opacity": "1"});
+  $("#two-background").css({"opacity": "0"});
+  $("#middle-background").css({"opacity": "0"});
+  $("#three-background").css({"opacity": "0"});
+  $("#four-background").css({"opacity": "0"});
+
+	$("#one .link").css({"margin-bottom": "150px"});
+
+	$("#one").css({"height": "40%", "opacity": "1"});
+  $("#two").css({"height": "10%", "opacity": "0.1"});
+  $("#middle").css({"height": "30%", "opacity": "0.5"});
+  $("#three").css({"height": "10%", "opacity": "0.1"});
+  $("#four").css({"height": "10%", "opacity": "0.1"});
+  
+  $("#middle #name").css({"font-size": "15px"});
+  $("#middle #top").css({"font-size": "0px", "opacity": "0"});
+  $("#middle #extras .extra").css({"font-size": "0px", "opacity": "0"});
+  $(".link").css({"font-size": "10px"});
+  $("#one .link").css({"font-size": "30px"});
+  
+  $("a").css({"color": "#C9CDFF"});
+
+}, function() {
+
+	$("#one-background").css({"opacity": "0"});
+  $("#two-background").css({"opacity": "0"});
+  $("#middle-background").css({"opacity": "1"});
+  $("#three-background").css({"opacity": "0"});
+  $("#four-background").css({"opacity": "0"});
+
+	$("#one .link").css({"margin-bottom": "0px"});
+
+	$("#one").css({"height": "20%", "opacity": "0.5"});
+  $("#two").css({"height": "20%", "opacity": "0.5"});
+  $("#middle").css({"height": "20%", "opacity": "1"});
+  $("#three").css({"height": "20%", "opacity": "0.5"});
+  $("#four").css({"height": "20%", "opacity": "0.5"});
+  
+  $("#middle #name").css({"font-size": "60px"});
+  $("#middle #top").css({"font-size": "15px", "opacity": "0.7"});
+  $("#middle #extras .extra").css({"font-size": "12px", "opacity": "0.7"});
+  $(".link").css({"font-size": "15px"});
+  
+  $("a").css({"color": "#ebecf5"});
+  $("#middle #extras .extra").css({"color": "#f5e0c1"});
+  $("#back").css({"color": "#f5e0c1"});
+
+});
+
+
+
+
+
+$("#two").hover(function() {
+
+	$("#two-background").css({"opacity": "0"});
+  $("#two-background").css({"opacity": "1"});
+  $("#middle-background").css({"opacity": "0"});
+  $("#three-background").css({"opacity": "0"});
+  $("#four-background").css({"opacity": "0"});
+
+	$("#two .link").css({"margin-top": "150px"});
+
+	$("#one").css({"height": "10%", "opacity": "0.1"});
+  $("#two").css({"height": "40%", "opacity": "1"});
+  $("#middle").css({"height": "30%", "opacity": "0.5"});
+  $("#three").css({"height": "10%", "opacity": "0.1"});
+  $("#four").css({"height": "10%", "opacity": "0.1"});
+  
+  $("#middle #name").css({"font-size": "15px"});
+  $("#middle #top").css({"font-size": "0px", "opacity": "0"});
+  $("#middle #extras .extra").css({"font-size": "0px", "opacity": "0"});
+  $(".link").css({"font-size": "10px"});
+  $("#two .link").css({"font-size": "30px"});
+  
+  $("a").css({"color": "#FFFDB5"});
+
+}, function() {
+
+	$("#one-background").css({"opacity": "0"});
+  $("#two-background").css({"opacity": "0"});
+  $("#middle-background").css({"opacity": "1"});
+  $("#three-background").css({"opacity": "0"});
+  $("#four-background").css({"opacity": "0"});
+
+	$("#two .link").css({"margin-top": "0px"});
+
+	$("#one").css({"height": "20%", "opacity": "0.5"});
+  $("#two").css({"height": "20%", "opacity": "0.5"});
+  $("#middle").css({"height": "20%", "opacity": "1"});
+  $("#three").css({"height": "20%", "opacity": "0.5"});
+  $("#four").css({"height": "20%", "opacity": "0.5"});
+  
+  $("#middle #name").css({"font-size": "60px"});
+  $("#middle #top").css({"font-size": "15px", "opacity": "0.7"});
+  $("#middle #extras .extra").css({"font-size": "12px", "opacity": "0.7"});
+  $(".link").css({"font-size": "15px"});
+  
+  $("a").css({"color": "#ebecf5"});
+  $("#middle #extras .extra").css({"color": "#f5e0c1"});
+  $("#back").css({"color": "#f5e0c1"});
+
+});
+
+
+
+
+$("#three").hover(function() {
+
+	$("#one-background").css({"opacity": "0"});
+  $("#two-background").css({"opacity": "0"});
+  $("#middle-background").css({"opacity": "0"});
+  $("#three-background").css({"opacity": "1"});
+  $("#four-background").css({"opacity": "0"});
+
+	$("#three .link").css({"margin-bottom": "150px"});
+
+	$("#one").css({"height": "10%", "opacity": "0.1"});
+  $("#two").css({"height": "10%", "opacity": "0.1"});
+  $("#middle").css({"height": "30%", "opacity": "0.5"});
+  $("#three").css({"height": "40%", "opacity": "1"});
+  $("#four").css({"height": "10%", "opacity": "0.1"});
+  
+  $("#middle #name").css({"font-size": "15px"});
+  $("#middle #top").css({"font-size": "0px", "opacity": "0"});
+  $("#middle #extras .extra").css({"font-size": "0px", "opacity": "0"});
+  $(".link").css({"font-size": "10px"});
+  $("#three .link").css({"font-size": "30px"});
+  
+  $("a").css({"color": "#f2bde5"});
+
+}, function() {
+	
+  $("#one-background").css({"opacity": "0"});
+  $("#two-background").css({"opacity": "0"});
+  $("#middle-background").css({"opacity": "1"});
+  $("#three-background").css({"opacity": "0"});
+  $("#four-background").css({"opacity": "0"});
+
+	$("#three .link").css({"margin-bottom": "0px"});
+
+	$("#one").css({"height": "20%", "opacity": "0.5"});
+  $("#two").css({"height": "20%", "opacity": "0.5"});
+  $("#middle").css({"height": "20%", "opacity": "1"});
+  $("#three").css({"height": "20%", "opacity": "0.5"});
+  $("#four").css({"height": "20%", "opacity": "0.5"});
+  
+  $("#middle #name").css({"font-size": "60px"});
+  $("#middle #top").css({"font-size": "15px", "opacity": "0.7"});
+  $("#middle #extras .extra").css({"font-size": "12px", "opacity": "0.7"});
+  $(".link").css({"font-size": "15px"});
+  
+  $("a").css({"color": "#ebecf5"});
+  $("#middle #extras .extra").css({"color": "#f5e0c1"});
+  $("#back").css({"color": "#f5e0c1"});
+
+});
+
+
+
+
+
+
+
+
+$("#four").hover(function() {
+
+	$("#one-background").css({"opacity": "0"});
+  $("#two-background").css({"opacity": "0"});
+  $("#middle-background").css({"opacity": "0"});
+  $("#three-background").css({"opacity": "0"});
+  $("#four-background").css({"opacity": "1"});
+
+	$("#four .link").css({"margin-top": "150px"});
+
+	$("#one").css({"height": "10%", "opacity": "0.1"});
+  $("#two").css({"height": "10%", "opacity": "0.1"});
+  $("#middle").css({"height": "30%", "opacity": "0.5"});
+  $("#three").css({"height": "10%", "opacity": "0.1"});
+  $("#four").css({"height": "40%", "opacity": "1"});
+  
+  $("#middle #name").css({"font-size": "15px"});
+  $("#middle #top").css({"font-size": "0px", "opacity": "0"});
+  $("#middle #extras .extra").css({"font-size": "0px", "opacity": "0"});
+  $(".link").css({"font-size": "10px"});
+  $("#four .link").css({"font-size": "30px"});
+  
+  $("a").css({"color": "#AAB1C5"});
+
+}, function() {
+
+	$("#one-background").css({"opacity": "0"});
+  $("#two-background").css({"opacity": "0"});
+  $("#middle-background").css({"opacity": "1"});
+  $("#three-background").css({"opacity": "0"});
+  $("#four-background").css({"opacity": "0"});
+
+	$("#four .link").css({"margin-top": "0px"});
+
+	$("#one").css({"height": "20%", "opacity": "0.5"});
+  $("#two").css({"height": "20%", "opacity": "0.5"});
+  $("#middle").css({"height": "20%", "opacity": "1"});
+  $("#three").css({"height": "20%", "opacity": "0.5"});
+  $("#four").css({"height": "20%", "opacity": "0.5"});
+  
+  $("#middle #name").css({"font-size": "60px"});
+  $("#middle #top").css({"font-size": "15px", "opacity": "0.7"});
+  $("#middle #extras .extra").css({"font-size": "12px", "opacity": "0.7"});
+  $(".link").css({"font-size": "15px"});
+  
+  $("a").css({"color": "#ebecf5"});
+  $("#middle #extras .extra").css({"color": "#f5e0c1"});
+  $("#back").css({"color": "#f5e0c1"});
+
+});
+
+$(".extra").hover(function() {
+	$(this).css({"opacity": "1"});
+}, function() {
+	$(this).css({"opacity": "0.7"});
+});
+
+</script>
+
+</body>
