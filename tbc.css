@@ -3,8 +3,12 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
+  cursor: crosshair;
+}
+* {
+  cursor: crosshair;
 }
 #container {
   display: flex;
