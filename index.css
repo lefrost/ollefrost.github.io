@@ -6,7 +6,7 @@ html, body {
   width: 100%;
   scroll-behavior: smooth;
   cursor: crosshair;
-  user-select: none
+  user-select: none;
 }
 * {
   cursor: crosshair;
