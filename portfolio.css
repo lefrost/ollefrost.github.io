@@ -1,106 +1,284 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 html, body {
-  height: 100%;
-  width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
-}
-* {
-  transition: all 0.8s;
-}
-.background {
-  z-index: -1;
-  position: absolute;
-  opacity: 0;
-  width: 1920px;
-}
-#middle-background {
-  opacity: 1;
+  width: 100%;
 }
 #container {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(39, 42, 69, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-#container #back {
-  position: absolute;
-  font-size: 40px;
-  color: #f5e0c1;
-  opacity: 0.5;
-  z-index: 1;
-  font-family: 'Press Start 2P';
-  top: 50px;
-  left: 50px;
-  text-decoration: none;
-}
-#container #back:hover {
-  opacity: 1;
-}
-#container .link {
-  font-size: 15px;
-  color: #ebecf5;
-  font-family: 'Press Start 2P';
-  text-decoration: none;
-}
-#container .link:hover {
-  letter-spacing: 5px;
-}
-#container #middle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
-  height: 20%;
+  background-color: #f2f0da;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  transition: all 1s;
 }
-#container #middle #top {
-  color: #ebecf5;
-  font-family: 'Press Start 2P';
-  font-size: 15px;
-  margin-bottom: 10px;
-  margin-left: -120px;
-  opacity: 0.7;
-}
-#container #middle #name {
-  font-size: 60px;
-  color: #ebecf5;
-  font-family: 'Press Start 2P';
-}
-#container #middle #extras {
+#container .slug {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  margin-top: 10px;
-  margin-left: -3px;
-}
-#container #middle #extras .extra {
-  font-size: 12px;
-  color: #f5e0c1;
-  font-family: 'Press Start 2P';
-  text-decoration: none;
-  margin-right: 15px;
+  justify-content: center;
   opacity: 0.7;
+  padding: 50px 0px 50px 0px;
+  width: 100%;
+  transition: all 0.7s;
 }
-#container .item {
+#container .slug a {
+  font-size: 15px;
+  letter-spacing: 10px;
+  font-family: 'Sora';
+  color: #3c3c4d;
+  text-decoration: none;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .slug .back {
+  font-size: 0px;
+  opacity: 0;
+  z-index: 1;
+}
+#container .slug:hover {
+  opacity: 1;
+}
+#container .slug:hover .desc {
+  font-size: 0px;
+  opacity: 0;
+}
+#container .slug:hover .back {
+  font-size: 15px;
+  opacity: 0.5;
+}
+#container .slug:hover .back:hover {
+  letter-spacing: 15px;
+  opacity: 1;
+}
+#container .section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 600px;
   width: 100%;
-  height: 20%;
+}
+#container .section .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#container .section #philosophy #philo {
+  font-size: 180px;
+  font-family: 'Quattrocento';
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .section #philosophy #sophy {
+  font-size: 160px;
+  font-family: 'Quattrocento';
+  margin-top: -70px;
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .section #philosophy #text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.7s;
+}
+#container .section #philosophy #text a {
+  transition: all 0.7s;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+#container .section #philosophy #text .font {
+  font-size: 20px;
+  font-family: 'Quattrocento';
+  font-style: italic;
+}
+#container .section #philosophy #text .sub {
+  font-size: 6px;
+  letter-spacing: 5px;
+  font-family: 'Sora';
+}
+#container .section #philosophy:hover #philo {
+  font-size: 300px;
+  opacity: 0.1;
+}
+#container .section #philosophy:hover #sophy {
+  font-size: 260px;
+  opacity: 0.1;
+  margin-top: -115px;
+}
+#container .section #philosophy:hover #text {
+  opacity: 1;
+}
+#container .section #philosophy:hover #text .font {
+  font-size: 30px;
+}
+#container .section #philosophy:hover #text .sub {
+  font-size: 16px;
+}
+#container .section #projects #proj {
+  font-size: 180px;
+  font-family: 'Quattrocento';
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .section #projects #ects {
+  font-size: 172px;
+  font-family: 'Quattrocento';
+  margin-top: -75px;
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .section #projects #numbers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.7s;
+}
+#container .section #projects #numbers .number {
+  font-size: 40px;
+  font-family: 'Quattrocento';
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #3c3c4d;
   opacity: 0.5;
-  padding: 20px;
+  transition: all 0.7s;
 }
-#container #one, #container #three {
-  justify-content: flex-end;
+#container .section #projects:hover #proj {
+  font-size: 250px;
+  opacity: 0.1;
 }
-#container #two, #container #four {
-  justify-content: flex-start;
+#container .section #projects:hover #ects {
+  font-size: 238px;
+  opacity: 0.1;
+  margin-top: -100px;
+}
+#container .section #projects:hover #numbers {
+  opacity: 1;
+}
+#container .section #projects:hover #numbers .number {
+  font-size: 70px;
+}
+#container .section #projects:hover #numbers .number:hover {
+  opacity: 1;
+}
+#container .section #animanga-cards #animanga {
+  font-size: 100px;
+  font-family: 'Quattrocento';
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .section #animanga-cards #cards {
+  font-size: 175px;
+  font-family: 'Quattrocento';
+  margin-top: -52px;
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .section #animanga-cards .feature {
+  position: absolute;
+  width: 0px;
+  opacity: 0;
+  transition: all 0.7s;
+}
+#container .section #animanga-cards:hover #animanga {
+  font-size: 130px;
+  opacity: 0.1;
+}
+#container .section #animanga-cards:hover #cards {
+  font-size: 230px;
+  opacity: 0.1;
+  margin-top: -70px;
+}
+#container .section #animanga-cards:hover .feature {
+  width: 700px;
+  opacity: 1;
+}
+#container .section #haus #ha {
+  font-size: 200px;
+  font-family: 'Quattrocento';
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .section #haus #us {
+  font-size: 222px;
+  font-family: 'Quattrocento';
+  margin-top: -88px;
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .section #haus .feature {
+  position: absolute;
+  width: 0px;
+  opacity: 0;
+  transition: all 0.7s;
+}
+#container .section #haus:hover #ha {
+  font-size: 250px;
+  opacity: 0.1;
+}
+#container .section #haus:hover #us {
+  font-size: 275px;
+  opacity: 0.1;
+  margin-top: -110px;
+}
+#container .section #haus:hover .feature {
+  width: 700px;
+  opacity: 1;
+}
+#container .section #tripwire #trip {
+  font-size: 220px;
+  font-family: 'Quattrocento';
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .section #tripwire #wire {
+  font-size: 170px;
+  font-family: 'Quattrocento';
+  margin-top: -82px;
+  color: #3c3c4d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#container .section #tripwire .feature {
+  position: absolute;
+  width: 0px;
+  opacity: 0;
+  transition: all 0.7s;
+}
+#container .section #tripwire:hover #trip {
+  font-size: 260px;
+  opacity: 0.1;
+}
+#container .section #tripwire:hover #wire {
+  font-size: 205px;
+  opacity: 0.1;
+  margin-top: -98px;
+}
+#container .section #tripwire:hover .feature {
+  width: 700px;
+  opacity: 1;
 }
