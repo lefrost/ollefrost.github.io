@@ -4,276 +4,190 @@
   <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/ollefrost/ollefrost.github.io/master/marii.ico">
   <link rel="stylesheet" href="portfolio.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <title>Léfrost :: Portfolio</title>
+  <title>R.K. : Portfolio</title>
 </head>
 
 <div id='container'>
-  <img class='background' id='one-background' src='https://i.postimg.cc/JrvZp5Nd/animanga-cards.png'>
   
-  <img class='background' id='two-background' src='https://i.postimg.cc/nF9f8nmc/haus.png'>
-  
-  <img class='background' id='middle-background' src='https://media.sketchfab.com/models/4eba49b0f6f54ade836a565d98247723/thumbnails/1266d134f2564ede8e85a19fa5a4b681/34802d88b4be4c3a9bcf0eedf52b1140.jpeg'>
-  
-  <img class='background' id='three-background' src='https://media.sketchfab.com/models/4eba49b0f6f54ade836a565d98247723/thumbnails/1266d134f2564ede8e85a19fa5a4b681/34802d88b4be4c3a9bcf0eedf52b1140.jpeg'>
-  
-  <img class='background' id='four-background' src='https://i.postimg.cc/Kx66T6Cd/tripwire.png'>
+  <div class='slug'>
+    <a href='#' class='back'>BACK</a>
+    <a class='desc'>RYAN KOROH'S PORTFOLIO, BEGIN</a>
+  </div>
 
-  <a href='https://ollefrost.github.io/' id='back'>&lt;</a>
-  
-  <div class='item' id='one' onclick='location.href="https://ollefrost.github.io/tbc.html"'>
-    <a href='https://ollefrost.github.io/tbc.html' class='link'>ANIMANGA CARDS</a>
-  </div>
-  
-  <div class='item' id='two' onclick='location.href="https://ollefrost.github.io/tbc.html"'>
-    <a href='https://ollefrost.github.io/tbc.html' class='link'>HAUS</a>
-  </div>
-  
-  <div id='middle'>
-    <a id='top'>RYAN KOROH'S</a>
-    <a id='name'>PORT<br>FOLIO</a>
-    <div id='extras'>
-      <a href='https://behance.net/ryankoroh' class='extra'>BEHANCE</a>
-      <a href='https://dribbble.com/ryankoroh' class='extra'>DRIBBBLE</a>
-      <a href='https://github.com/ollefrost' class='extra'>GITHUB</a>
+  <div class='section' style='margin-top: 100px;'>
+    <div class='box' id='philosophy'>
+      <a id='philo'>PHILO</a>
+      <a id='sophy'>SOPHY</a>
+      <div id='text'>
+        <a class='sub'>ADVENTUROUS WHILE ESTABLISHED.</a>
+        <a class='font'>PRACTICE PRACTICALITY.</a>
+        <a class='sub'>MULTI-DISCIPLINED AND OPEN-MINDED.</a>
+        <a class='font'>ATTEND TO THE AESTHETICS.</a>
+        <a class='sub'>PERSONALITY IS DEFINITIVE.</a>
+      </div>
     </div>
   </div>
   
-  <div class='item' id='three' onclick='location.href="https://ollefrost.github.io/tbc.html"'>
-    <a href='https://ollefrost.github.io/tbc.html' class='link'>SINATRA</a>
+  <div class='section'>
+    <div class='box' id='projects'>
+      <a id='proj'>PROJ</a>
+      <a id='ects'>ECTS</a>
+      <div id='numbers'>
+        <a href='#01' id='n01' class='number'>01</a>
+        <a href='#02' id='n02' class='number'>02</a>
+        <a href='#03' id='n03' class='number'>03</a>
+      </div>
+    </div>
   </div>
   
-  <div class='item' id='four' onclick='location.href="https://ollefrost.github.io/tbc.html"'>
-    <a href='https://ollefrost.github.io/tbc.html' class='link'>TRIPWIRE</a>
+  <div class='section' id='01'>
+    <div class='box' id='animanga-cards'>
+      <a id='animanga'>ANIMANGA</a>
+      <a id='cards'>CARDS</a>
+      <img class='feature' src='https://i.postimg.cc/L5QfgdF1/animanga-cards.png'>
+    </div>
+  </div>
+  
+  <div class='section' id='02'>
+    <div class='box' id='haus'>
+      <a id='ha'>HA</a>
+      <a id='us'>US</a>
+      <img class='feature' src='https://i.postimg.cc/QXbN1ZBc/haus.png'>
+    </div>
+  </div>
+  
+  <div class='section' id='03' style='margin-bottom: 100px;'>
+    <div class='box' id='tripwire'>
+      <a id='trip'>TRIP</a>
+      <a id='wire'>WIRE</a>
+      <img class='feature' src='https://i.postimg.cc/4NJfyJZK/tripwire.png'>
+    </div>
+  </div>
+
+  <div class='slug'>
+    <a href='#' class='back'>BACK</a>
+    <a class='desc'>RYAN KOROH'S PORTFOLIO, BEGIN</a>
   </div>
 
 </div>
 
+</body>
+
 <script>
 
-$("#one").hover(function() {
+var dark = "#3c3c4d";
+var light = "#f2f0da";
+var blue = "#4b4e6e";
+var green = "#54734d";
+var brown = "#6e5f4b";
+var orange = "#bfa471";
 
-	$("#one-background").css({"opacity": "1"});
-  $("#two-background").css({"opacity": "0"});
-  $("#middle-background").css({"opacity": "0"});
-  $("#three-background").css({"opacity": "0"});
-  $("#four-background").css({"opacity": "0"});
-
-	$("#one .link").css({"margin-bottom": "150px"});
-
-	$("#one").css({"height": "40%", "opacity": "1"});
-  $("#two").css({"height": "10%", "opacity": "0.1"});
-  $("#middle").css({"height": "30%", "opacity": "0.5"});
-  $("#three").css({"height": "10%", "opacity": "0.1"});
-  $("#four").css({"height": "10%", "opacity": "0.1"});
-  
-  $("#middle #name").css({"font-size": "15px"});
-  $("#middle #top").css({"font-size": "0px", "opacity": "0"});
-  $("#middle #extras .extra").css({"font-size": "0px", "opacity": "0"});
-  $(".link").css({"font-size": "10px"});
-  $("#one .link").css({"font-size": "30px"});
-  
-  $("a").css({"color": "#C9CDFF"});
-
-}, function() {
-
-	$("#one-background").css({"opacity": "0"});
-  $("#two-background").css({"opacity": "0"});
-  $("#middle-background").css({"opacity": "1"});
-  $("#three-background").css({"opacity": "0"});
-  $("#four-background").css({"opacity": "0"});
-
-	$("#one .link").css({"margin-bottom": "0px"});
-
-	$("#one").css({"height": "20%", "opacity": "0.5"});
-  $("#two").css({"height": "20%", "opacity": "0.5"});
-  $("#middle").css({"height": "20%", "opacity": "1"});
-  $("#three").css({"height": "20%", "opacity": "0.5"});
-  $("#four").css({"height": "20%", "opacity": "0.5"});
-  
-  $("#middle #name").css({"font-size": "60px"});
-  $("#middle #top").css({"font-size": "15px", "opacity": "0.7"});
-  $("#middle #extras .extra").css({"font-size": "12px", "opacity": "0.7"});
-  $(".link").css({"font-size": "15px"});
-  
-  $("a").css({"color": "#ebecf5"});
-  $("#middle #extras .extra").css({"color": "#f5e0c1"});
-  $("#back").css({"color": "#f5e0c1"});
-
-});
-
-
-
-
-
-$("#two").hover(function() {
-
-	$("#two-background").css({"opacity": "0"});
-  $("#two-background").css({"opacity": "1"});
-  $("#middle-background").css({"opacity": "0"});
-  $("#three-background").css({"opacity": "0"});
-  $("#four-background").css({"opacity": "0"});
-
-	$("#two .link").css({"margin-top": "150px"});
-
-	$("#one").css({"height": "10%", "opacity": "0.1"});
-  $("#two").css({"height": "40%", "opacity": "1"});
-  $("#middle").css({"height": "30%", "opacity": "0.5"});
-  $("#three").css({"height": "10%", "opacity": "0.1"});
-  $("#four").css({"height": "10%", "opacity": "0.1"});
-  
-  $("#middle #name").css({"font-size": "15px"});
-  $("#middle #top").css({"font-size": "0px", "opacity": "0"});
-  $("#middle #extras .extra").css({"font-size": "0px", "opacity": "0"});
-  $(".link").css({"font-size": "10px"});
-  $("#two .link").css({"font-size": "30px"});
-  
-  $("a").css({"color": "#FFFDB5"});
-
-}, function() {
-
-	$("#one-background").css({"opacity": "0"});
-  $("#two-background").css({"opacity": "0"});
-  $("#middle-background").css({"opacity": "1"});
-  $("#three-background").css({"opacity": "0"});
-  $("#four-background").css({"opacity": "0"});
-
-	$("#two .link").css({"margin-top": "0px"});
-
-	$("#one").css({"height": "20%", "opacity": "0.5"});
-  $("#two").css({"height": "20%", "opacity": "0.5"});
-  $("#middle").css({"height": "20%", "opacity": "1"});
-  $("#three").css({"height": "20%", "opacity": "0.5"});
-  $("#four").css({"height": "20%", "opacity": "0.5"});
-  
-  $("#middle #name").css({"font-size": "60px"});
-  $("#middle #top").css({"font-size": "15px", "opacity": "0.7"});
-  $("#middle #extras .extra").css({"font-size": "12px", "opacity": "0.7"});
-  $(".link").css({"font-size": "15px"});
-  
-  $("a").css({"color": "#ebecf5"});
-  $("#middle #extras .extra").css({"color": "#f5e0c1"});
-  $("#back").css({"color": "#f5e0c1"});
-
-});
-
-
-
-
-$("#three").hover(function() {
-
-	$("#one-background").css({"opacity": "0"});
-  $("#two-background").css({"opacity": "0"});
-  $("#middle-background").css({"opacity": "0"});
-  $("#three-background").css({"opacity": "1"});
-  $("#four-background").css({"opacity": "0"});
-
-	$("#three .link").css({"margin-bottom": "150px"});
-
-	$("#one").css({"height": "10%", "opacity": "0.1"});
-  $("#two").css({"height": "10%", "opacity": "0.1"});
-  $("#middle").css({"height": "30%", "opacity": "0.5"});
-  $("#three").css({"height": "40%", "opacity": "1"});
-  $("#four").css({"height": "10%", "opacity": "0.1"});
-  
-  $("#middle #name").css({"font-size": "15px"});
-  $("#middle #top").css({"font-size": "0px", "opacity": "0"});
-  $("#middle #extras .extra").css({"font-size": "0px", "opacity": "0"});
-  $(".link").css({"font-size": "10px"});
-  $("#three .link").css({"font-size": "30px"});
-  
-  $("a").css({"color": "#f2bde5"});
-
-}, function() {
+$("#philosophy").hover(function() {
 	
-  $("#one-background").css({"opacity": "0"});
-  $("#two-background").css({"opacity": "0"});
-  $("#middle-background").css({"opacity": "1"});
-  $("#three-background").css({"opacity": "0"});
-  $("#four-background").css({"opacity": "0"});
-
-	$("#three .link").css({"margin-bottom": "0px"});
-
-	$("#one").css({"height": "20%", "opacity": "0.5"});
-  $("#two").css({"height": "20%", "opacity": "0.5"});
-  $("#middle").css({"height": "20%", "opacity": "1"});
-  $("#three").css({"height": "20%", "opacity": "0.5"});
-  $("#four").css({"height": "20%", "opacity": "0.5"});
+  $("#container").css({"background-color": dark});
+  $("a").css({"color": light});
   
-  $("#middle #name").css({"font-size": "60px"});
-  $("#middle #top").css({"font-size": "15px", "opacity": "0.7"});
-  $("#middle #extras .extra").css({"font-size": "12px", "opacity": "0.7"});
-  $(".link").css({"font-size": "15px"});
-  
-  $("a").css({"color": "#ebecf5"});
-  $("#middle #extras .extra").css({"color": "#f5e0c1"});
-  $("#back").css({"color": "#f5e0c1"});
+}, function() {
+
+	$("#container").css({"background-color": light});
+  $("a").css({"color": dark});
 
 });
 
-
-
-
-
-
-
-
-$("#four").hover(function() {
-
-	$("#one-background").css({"opacity": "0"});
-  $("#two-background").css({"opacity": "0"});
-  $("#middle-background").css({"opacity": "0"});
-  $("#three-background").css({"opacity": "0"});
-  $("#four-background").css({"opacity": "1"});
-
-	$("#four .link").css({"margin-top": "150px"});
-
-	$("#one").css({"height": "10%", "opacity": "0.1"});
-  $("#two").css({"height": "10%", "opacity": "0.1"});
-  $("#middle").css({"height": "30%", "opacity": "0.5"});
-  $("#three").css({"height": "10%", "opacity": "0.1"});
-  $("#four").css({"height": "40%", "opacity": "1"});
+$("#n01").hover(function() {
+	
+  $("#container").css({"background-color": blue});
+  $("a").css({"color": light});
   
-  $("#middle #name").css({"font-size": "15px"});
-  $("#middle #top").css({"font-size": "0px", "opacity": "0"});
-  $("#middle #extras .extra").css({"font-size": "0px", "opacity": "0"});
-  $(".link").css({"font-size": "10px"});
-  $("#four .link").css({"font-size": "30px"});
-  
-  $("a").css({"color": "#AAB1C5"});
-
 }, function() {
 
-	$("#one-background").css({"opacity": "0"});
-  $("#two-background").css({"opacity": "0"});
-  $("#middle-background").css({"opacity": "1"});
-  $("#three-background").css({"opacity": "0"});
-  $("#four-background").css({"opacity": "0"});
-
-	$("#four .link").css({"margin-top": "0px"});
-
-	$("#one").css({"height": "20%", "opacity": "0.5"});
-  $("#two").css({"height": "20%", "opacity": "0.5"});
-  $("#middle").css({"height": "20%", "opacity": "1"});
-  $("#three").css({"height": "20%", "opacity": "0.5"});
-  $("#four").css({"height": "20%", "opacity": "0.5"});
-  
-  $("#middle #name").css({"font-size": "60px"});
-  $("#middle #top").css({"font-size": "15px", "opacity": "0.7"});
-  $("#middle #extras .extra").css({"font-size": "12px", "opacity": "0.7"});
-  $(".link").css({"font-size": "15px"});
-  
-  $("a").css({"color": "#ebecf5"});
-  $("#middle #extras .extra").css({"color": "#f5e0c1"});
-  $("#back").css({"color": "#f5e0c1"});
+	$("#container").css({"background-color": light});
+  $("a").css({"color": dark});
 
 });
 
-$(".extra").hover(function() {
-	$(this).css({"opacity": "1"});
+$("#n02").hover(function() {
+	
+  $("#container").css({"background-color": green});
+  $("a").css({"color": light});
+  
 }, function() {
-	$(this).css({"opacity": "0.7"});
+
+	$("#container").css({"background-color": light});
+  $("a").css({"color": dark});
+
+});
+
+/*$("#n03").hover(function() {
+	
+  $("#container").css({"background-color": brown});
+  $("a").css({"color": light});
+  
+}, function() {
+
+	$("#container").css({"background-color": light});
+  $("a").css({"color": dark});
+
+});*/
+
+$("#n03").hover(function() {
+	
+  $("#container").css({"background-color": orange});
+  $("a").css({"color": light});
+  
+}, function() {
+
+	$("#container").css({"background-color": light});
+  $("a").css({"color": dark});
+
+});
+
+$("#animanga-cards").hover(function() {
+	
+  $("#container").css({"background-color": blue});
+  $("a").css({"color": light});
+  
+}, function() {
+
+	$("#container").css({"background-color": light});
+  $("a").css({"color": dark});
+
+});
+
+$("#haus").hover(function() {
+	
+  $("#container").css({"background-color": green});
+  $("a").css({"color": light});
+  
+}, function() {
+
+	$("#container").css({"background-color": light});
+  $("a").css({"color": dark});
+
+});
+
+$("#sinatra").hover(function() {
+	
+  $("#container").css({"background-color": brown});
+  $("a").css({"color": light});
+  
+}, function() {
+
+	$("#container").css({"background-color": light});
+  $("a").css({"color": dark});
+
+});
+
+$("#tripwire").hover(function() {
+	
+  $("#container").css({"background-color": orange});
+  $("a").css({"color": light});
+  
+}, function() {
+
+	$("#container").css({"background-color": light});
+  $("a").css({"color": dark});
+
 });
 
 </script>
-
-</body>
