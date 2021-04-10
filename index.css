@@ -1,120 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Mitr&family=Press+Start+2P&family=Bangers&display=swap');
+
+$black: #545049;
+$white: #f5ddb0;
+$yellow: #f5c05d;
+$dark-yellow: #e3ac44;
+
+$ff-pixel: 'Press Start 2P';
+$ff-sans-serif: 'Mitr';
+$ff-text: 'Bangers';
+
+$ff-main: $ff-pixel; */
+
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Press+Start+2P&family=Bangers&display=swap');
+
 html, body {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  scroll-behavior: smooth;
-  cursor: crosshair;
-  user-select: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f5c05d;
+	color: #545049;
+	font-family: 'Mitr';
+	font-size: 16px;
+	line-height: 1.1;
 }
-* {
-  cursor: crosshair;
+
+.chat {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 500px;
+	animation: floaty 3s infinite ease-in-out;
 }
-#container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: #f2f0da;
+
+@keyframes floaty {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }
 }
-#container #name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
+
+.chat-item:not(:first-child) {
+	margin-top: 10px;
 }
-#container #name #statue {
-  position: absolute;
-  height: 380px;
-  z-index: 1;
-  transition: all 0.7s;
+
+.log {
+	max-width: 500px;
+	color: #ad863d;
 }
-#container #name #ryan {
-  font-size: 250px;
-  font-family: 'Quattrocento';
-  color: #3c3c4d;
-  z-index: 0;
-  transition: all 0.7s;
+
+.msg {
+	max-width: 500px;
+	background-color: #f5ddb0;
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: flex;
+	transition: background-color 0.4s;
 }
-#container #name #koroh {
-  font-size: 182px;
-  font-family: 'Quattrocento';
-  color: #3c3c4d;
-  z-index: 0;
-  margin-top: -90px;
-  transition: all 0.7s;
+
+.msg:hover {
+	background-color: #e7d0a4;
 }
-#container #name #text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  opacity: 0;
-  transition: all 0.7s;
+
+.dot {
+	background-color: rgba(84, 80, 73, 0.3);
+	height: 8px;
+	width: 8px;
+	border-radius: 100%;
+	transition: background-color 0.4s;
 }
-#container #name #text #me {
-  font-size: 10px;
-  letter-spacing: 10px;
-  font-family: 'Sora';
-  color: #3c3c4d;
-  transition: all 0.7s;
+
+.dot:not(:first-child) {
+	margin-left: 3px;
 }
-#container #name #text #links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+
+.dot.active-- {
+	background-color: rgba(84, 80, 73, 0.6);
 }
-#container #name #text #links .link {
-  font-size: 40px;
-  font-family: 'Quattrocento';
-  color: #3c3c4d;
-  text-decoration: none;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  opacity: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  transition: all 0.7s;
+
+.options {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
-#container #name #text #based {
-  font-size: 5px;
-  letter-spacing: 10px;
-  font-family: 'Sora';
-  color: #3c3c4d;
-  transition: all 0.7s;
+
+.option {
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #f5ddb0;
+	background-color: #545049;
+	cursor: pointer;
+	transition: background-color 0.4s;
 }
-#container #name:hover #statue {
-  opacity: 0;
-  height: 150px;
+
+.option:not(:first-child) {
+	margin-left: 10px;
 }
-#container #name:hover #ryan {
-  font-size: 350px;
-  opacity: 0.1;
+
+.option:hover {
+	background-color: #413d37;
 }
-#container #name:hover #koroh {
-  font-size: 255px;
-  margin-top: -128px;
-  opacity: 0.1;
-}
-#container #name:hover #text {
-  opacity: 1;
-}
-#container #name:hover #text #me {
-  font-size: 25px;
-}
-#container #name:hover #text #links .link {
-  opacity: 0.5;
-  font-size: 70px;
-}
-#container #name:hover #text #links .link:hover {
-  opacity: 1;
-}
-#container #name:hover #text #based {
-  font-size: 15px;
-}
+
