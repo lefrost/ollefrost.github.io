@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Zen+Dots&family=Krona+One&display=swap');
+
+html, body {
+	background-color: #080808;
+	font-family: 'Krona One';
+	font-size: 12px;
+	line-height: 1.1;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/* ---- Scrollbar ---- */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #080808;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(201, 189, 166, 0.1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(201, 189, 166, 0.2);
+}
+
+/* ---- Section ---- */
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.1;
+    transition: opacity 1.2s;
+    animation: floaty 3s infinite ease-in-out;
+}
+
+.section.visible-- {
+    opacity: 1;
+}
+
+@keyframes floaty {
+	0% { transform: translate(0,  0px); }
+	50%  { transform: translate(0, 20px); }
+	100%   { transform: translate(0, -0px); }
+}
+
+/* ---- Text ---- */
+
+.text {
+    font-size: 12px;
+    color: #c49c4e;
+}
+
+.text.uppercase-- {
+    text-transform: uppercase;
+}
+
+.text.heading-- {
+    font-size: 100px;
+}
+
+.text.justified-- {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ---- Feature ---- */
+
+.feature {
+    /* nothing */
+}
+
+.feature-heading {
+    font-size: 200px;
+}
+
+.feature-caption {
+    margin-top: 10px;
+    margin-left: 20px;
+    letter-spacing: 10px;
+}
+
+/* ---- Whatever ---- */
+
+.whatever {
+    align-items: center;
+}
+
+.whatever-title {
+    line-height: 0.5;
+}
+
+.whatever-title span:nth-of-type(1) {
+    font-size: 88px;
+}
+
+.whatever-text {
+    margin-top: 40px;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+.whatever-text span {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* ---- Wherever ---- */
+
+.wherever {
+    align-items: center;
+}
+
+.wherever-title {
+    line-height: 0.5;
+}
+
+.wherever-title span:nth-of-type(1) {
+    font-size: 70px;
+}
+
+.wherever-text {
+    margin-top: 40px;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+.wherever   -text span {
+    font-size: 11px;
+    font-weight: bold;
+}

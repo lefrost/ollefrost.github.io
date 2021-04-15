@@ -34,9 +34,15 @@ html, body {
 }
 
 @keyframes floaty {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }
+	0% { transform: translate(0,  0px); }
+	50%  { transform: translate(0, 15px); }
+	100%   { transform: translate(0, -0px); }
+}
+
+@keyframes floaty-x2 {
+	0% { transform: translate(0,  0px); }
+	50%  { transform: translate(0, 30px); }
+	100%   { transform: translate(0, -0px); }
 }
 
 .chat-item:not(:first-child) {
@@ -100,3 +106,36 @@ html, body {
 	background-color: #413d37;
 }
 
+.box {
+	position: absolute;
+	background-color: #545049;
+	box-shadow: 0 0 1px 1px #545049;
+	padding: 15px 30px;
+	border-radius: 5px;
+	color: #f5ddb0;
+	animation: floaty-x2 4s infinite ease-in-out;
+}
+
+.heading {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.text {
+	line-height: 1.8;
+}
+
+.link {
+	color: #545049;
+	text-decoration: none;
+	background-color: #f5ddb0;
+	border-radius: 5px;
+	padding: 0 10px;
+	transition: background-color 0.4s;
+}
+
+.link:hover {
+	background-color: #e7d0a4;
+}
