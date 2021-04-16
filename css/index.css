@@ -1,0 +1,65 @@
+/* ---- Feature ---- */
+
+.feature {
+    /* nothing */
+}
+
+.feature-heading {
+    font-size: 200px;
+}
+
+.feature-caption {
+    margin-top: 10px;
+    margin-left: 20px;
+    letter-spacing: 10px;
+}
+
+/* ---- Whatever ---- */
+
+.whatever {
+    align-items: center;
+}
+
+.whatever-title {
+    line-height: 0.5;
+}
+
+.whatever-title span:nth-of-type(1) {
+    font-size: 88px;
+}
+
+.whatever-text {
+    margin-top: 40px;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+.whatever-text span {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* ---- Wherever ---- */
+
+.wherever {
+    align-items: center;
+}
+
+.wherever-title {
+    line-height: 0.5;
+}
+
+.wherever-title span:nth-of-type(1) {
+    font-size: 70px;
+}
+
+.wherever-text {
+    margin-top: 40px;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+.wherever   -text span {
+    font-size: 11px;
+    font-weight: bold;
+}

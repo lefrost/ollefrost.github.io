@@ -1,3 +1,13 @@
+// my own add-on
+
+$(window).on('load', function() {
+    butter.init({
+        wrapperId: 'butter',
+        cancelOnTouch: true,
+        wrapperDamper: 0.1
+      });
+});
+
 // butter.js
 
 (function(root){
@@ -10,7 +20,7 @@
             wrapperDamper: 0.07,
             cancelOnTouch: false
         }
-        
+
         this.validateOptions = function(ops) {
             for (var prop in ops) {
                 if (self.defaults.hasOwnProperty(prop)) {

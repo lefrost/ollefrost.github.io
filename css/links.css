@@ -1,0 +1,32 @@
+/* .links-image {
+    width: 100px;
+    margin-bottom: 20px;
+} */
+
+.links-link-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.links-link-container:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.links-link-container span {
+    margin-left: 20px;
+    font-size: 18px;
+    opacity: 0.3;
+    transition: opacity 0.4s;
+}
+
+.links-link:hover + span {
+    opacity: 1;
+}
+
+.links-link {
+    font-size: 50px;
+}
+
+.links-link::after {
+    height: 5px
+}

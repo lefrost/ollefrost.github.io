@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Zen+Dots&family=Krona+One&display=swap');
+
+html, body {
+	background-color: #080808;
+	font-family: 'Krona One';
+	font-size: 12px;
+	line-height: 1.1;
+}
+
+.container {
+    background-color: #080808;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/* ---- Animations ---- */
+
+@keyframes floaty {
+	0% { transform: translate(0,  0px); }
+	50%  { transform: translate(0, 20px); }
+	100%   { transform: translate(0, -0px); }
+}
+
+@keyframes less-floaty {
+	0% { transform: translate(0,  0px); }
+	50%  { transform: translate(0, 10px); }
+	100%   { transform: translate(0, -0px); }
+}
+
+/* ---- Global modifiers ---- */
+
+[data-onload] {
+    opacity: 0;
+}
+
+.linkable--- {
+    cursor: pointer;
+}
+
+.floaty-- {
+    animation: floaty 3s infinite ease-in-out;
+}
+
+.less-floaty-- {
+    animation: floaty 3s infinite ease-in-out;
+}
+/* ---- Scrollbar ---- */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #080808;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(201, 189, 166, 0.1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(201, 189, 166, 0.2);
+}
+
+/* ---- Back ---- */
+
+.back {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    z-index: 999;
+}
+
+.back > .text {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* ---- Section ---- */
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.1;
+    transition: opacity 1.2s;
+}
+
+.section.fullscreen-- {
+    width: 100%;
+}
+
+.section.centered-- {
+    align-items: center;
+}
+
+.section.visible-- {
+    opacity: 1;
+}
+
+/* ---- Column ---- */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ---- Text ---- */
+
+.text {
+    font-size: 12px;
+    color: #c49c4e;
+    text-decoration: none;
+}
+
+.text.uppercase-- {
+    text-transform: uppercase;
+}
+
+.text.heading-- {
+    font-size: 100px;
+}
+
+.text.justified-- {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ---- Link ---- */
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #9e7e3f;
+    transition: width 0.4s;
+}
+
+.link:hover::after {
+    width: 100%;
+}
