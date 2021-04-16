@@ -39,11 +39,11 @@ html, body {
     cursor: pointer;
 }
 
-.floaty-- {
+.floaty--- {
     animation: floaty 3s infinite ease-in-out;
 }
 
-.less-floaty-- {
+.less-floaty--- {
     animation: floaty 3s infinite ease-in-out;
 }
 /* ---- Scrollbar ---- */
