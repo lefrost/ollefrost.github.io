@@ -18,6 +18,16 @@ $(window).on('load', function() {
             }, 700);
         });
     });
+
+    var $timeSpans = $('[data-time]');
+
+    $timeSpans.each(function() {
+        var $timeSpan = $(this);
+        setInterval(function() {
+            $timeSpan.text(getTimeStr());
+        }, 1000);
+    })
+
 });
 
 $(window).on('load scroll', function() {

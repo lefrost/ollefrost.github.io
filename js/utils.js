@@ -8,3 +8,7 @@ function inView($elem) {
 
     return elementBottom - quartViewport > viewportTop && elementTop + quartViewport < viewportBottom;
 }
+
+function getTimeStr() {
+    return new Date().getHours() + ':' + new Date().getMinutes();
+}
