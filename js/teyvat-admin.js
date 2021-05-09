@@ -1,7 +1,7 @@
 $(window).on(`load`, function() {
 
     var $container = $('.container');
-    var noOfAddTasks = 0;
+    var noOfAddTasks = 0
 
     /* --- Blob --- */
     var $blobs = $(`[data-blob]`);
@@ -13,21 +13,22 @@ $(window).on(`load`, function() {
         $blobs.each(function() {
             let $blob = $(this);
             let name = $blob.data(`blob`);
-            let $blobCloser = $(`[data-blob-closer='${name}']`)
+            // let nameLead = name.trim().toLowerCase().split('-')[0];
+            let $blobCloser = $(`[data-blob-closer='${name}']`);
 
             $blob.draggable();
 
-            $blobCloser.on(`mouseover`, function() {
+            $blobCloser.off(`mouseover`).on(`mouseover`, function() { // .off() --> https://stackoverflow.com/a/40216885/8919391
                 type($blobCloser, 'close', { widthBase: 'text' });
-                // $blobCloser.text('close').animate({'opacity': 1}, 400);
             });
 
-            $blobCloser.on(`mouseout`, function() {
+            $blobCloser.off(`mouseout`).on(`mouseout`, function() {
                 untype($blobCloser, { widthBase: 'text', minWidth: 15 });
             });
 
             $blobCloser.on(`click`, function() {
                 $blob.hide('slow', function() { $blob.remove(); });
+                refreshBlobs();
             });
         });
     }
@@ -123,6 +124,7 @@ $(window).on(`load`, function() {
 
     function addBox() {
         noOfAddTasks++;
+
         $container.append(
             `<div class="new---  floaty---  blob  box" data-blob="add-${noOfAddTasks}">` +
                 `<div class="blob__closer  close--" data-blob-closer="add-${noOfAddTasks}"></div>` +
@@ -141,6 +143,10 @@ $(window).on(`load`, function() {
 
         refreshBlobs();
         refreshInputs();
+
+        for (let b of $blobs) {
+            console.log(b);
+        }
     }
 
 
