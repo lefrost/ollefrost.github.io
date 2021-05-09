@@ -5,6 +5,8 @@ html, body {
 	font-family: 'Krona One';
 	font-size: 12px;
 	line-height: 1.1;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
