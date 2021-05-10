@@ -143,10 +143,6 @@ $(window).on(`load`, function() {
 
         refreshBlobs();
         refreshInputs();
-
-        for (let b of $blobs) {
-            console.log(b);
-        }
     }
 
 
