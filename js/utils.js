@@ -10,5 +10,11 @@ function inView($elem) {
 }
 
 function getTimeStr() {
-    return new Date().getHours() + ':' + new Date().getMinutes();
+    Number.prototype.pad = function(size) {
+        var s = String(this);
+        while (s.length < (size || 2)) {s = "0" + s;}
+        return s;
+    }
+
+    return new Date().getHours().pad() + ':' + new Date().getMinutes().pad();
 }

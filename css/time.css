@@ -1,3 +1,15 @@
+body {
+    /* background-image: url('https://64.media.tumblr.com/80bb8f1fb49b2f9ecec27b69ac5b3c79/tumblr_n764e1qs8c1qfjqf7o1_r1_500.gif'); */
+    background-image: url('https://64.media.tumblr.com/5b7811b2000a369d95c70b3d8ceba383/tumblr_pagzdgijAo1qkz08qo1_540.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.time-container {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .time-heading {
     font-size: 150px;
+    color: rgba(255, 255, 255, 0.8);
 }
